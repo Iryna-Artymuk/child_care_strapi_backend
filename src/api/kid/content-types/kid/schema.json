@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kids",
+  "info": {
+    "singularName": "kid",
+    "pluralName": "kids",
+    "displayName": "kid"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "DOB": {
+      "type": "date",
+      "required": true,
+      "default": "2020-03-07"
+    },
+    "Hobby": {
+      "type": "string",
+      "required": true
+    },
+    "Sex": {
+      "type": "string",
+      "required": true
+    },
+    "PhotoFront": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "PhotoBack": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
