@@ -4,7 +4,8 @@
   "info": {
     "singularName": "kid",
     "pluralName": "kids",
-    "displayName": "kid"
+    "displayName": "kid",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,31 +25,32 @@
       "type": "string",
       "required": true
     },
-    "Sex": {
-      "type": "string",
-      "required": true
-    },
     "PhotoFront": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "PhotoBack": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
+    },
+    "Sex": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.sex"
     }
   }
 }

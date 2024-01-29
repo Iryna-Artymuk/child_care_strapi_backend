@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_sexes",
+  "info": {
+    "displayName": "sex"
+  },
+  "options": {},
+  "attributes": {
+    "Sex": {
+      "type": "enumeration",
+      "enum": [
+        "Дівчинка",
+        "Хлопчик"
+      ]
+    }
+  }
+}

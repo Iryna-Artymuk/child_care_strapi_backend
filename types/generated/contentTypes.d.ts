@@ -368,6 +368,7 @@ export interface ApiKidKid extends Schema.CollectionType {
     singularName: 'kid';
     pluralName: 'kids';
     displayName: 'kid';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -378,9 +379,9 @@ export interface ApiKidKid extends Schema.CollectionType {
       Attribute.Required &
       Attribute.DefaultTo<'2020-03-07'>;
     Hobby: Attribute.String & Attribute.Required;
-    Sex: Attribute.String & Attribute.Required;
     PhotoFront: Attribute.Media & Attribute.Required;
     PhotoBack: Attribute.Media & Attribute.Required;
+    Sex: Attribute.Component<'elements.sex'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
