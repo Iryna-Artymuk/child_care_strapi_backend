@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genres",
+  "info": {
+    "singularName": "genre",
+    "pluralName": "genres",
+    "displayName": "genre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "genre": {
+      "type": "string"
+    },
+    "studies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::study.study",
+      "mappedBy": "genres"
+    }
+  }
+}

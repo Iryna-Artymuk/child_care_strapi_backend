@@ -1,15 +1,5 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface ElementsButton extends Schema.Component {
-  collectionName: 'components_elements_buttons';
-  info: {
-    displayName: 'button';
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required;
-  };
-}
-
 export interface ElementsSex extends Schema.Component {
   collectionName: 'components_elements_sexes';
   info: {
@@ -28,7 +18,6 @@ export interface ElementsSex extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'elements.button': ElementsButton;
       'elements.sex': ElementsSex;
     }
   }

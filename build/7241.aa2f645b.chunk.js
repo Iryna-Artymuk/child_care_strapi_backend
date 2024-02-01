@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_strapi_project=self.webpackChunkmy_strapi_project||[]).push([[7241],{7241:(s,u,p)=>{p.r(u),p.d(u,{default:()=>n});const n={"plugin.description.long":"\u4E3A\u9ED8\u8BA4API\u65B9\u6CD5\u6DFB\u52A0GraphQL\u7AEF\u70B9","plugin.description.short":"\u4E3A\u9ED8\u8BA4API\u65B9\u6CD5\u6DFB\u52A0GraphQL\u7AEF\u70B9","plugin.name":"GraphQL"}}}]);
